@@ -1,4 +1,16 @@
 export default function Footer() {
+  const navLinks = [
+    { name: "Home", href: "#" },
+    { name: "Sermons", href: "#sermons" },
+    { name: "Devotions", href: "#devotion" },
+    { name: "About", href: "#about" },
+    { name: "History", href: "#history" },
+    { name: "Leaders", href: "#leaders" },
+    { name: "Statement of Faith", href: "#faith" },
+
+    { name: "Contact", href: "#contact" },
+  ];
+
   return (
     <footer className="bg-black border-t border-white/10 text-white">
       <div className="max-w-7xl mx-auto px-10 py-20">
@@ -25,24 +37,16 @@ export default function Footer() {
             </h3>
 
             <div className="grid grid-cols-2 gap-3 text-gray-300 text-sm">
-              <span className="hover:text-[#C6A777] cursor-pointer transition">
-                Home
-              </span>
-              <span className="hover:text-[#C6A777] cursor-pointer transition">
-                About
-              </span>
-              <span className="hover:text-[#C6A777] cursor-pointer transition">
-                Leaders
-              </span>
-              <span className="hover:text-[#C6A777] cursor-pointer transition">
-                History
-              </span>
-              <span className="hover:text-[#C6A777] cursor-pointer transition">
-                Sermons
-              </span>
-              <span className="hover:text-[#C6A777] cursor-pointer transition">
-                Contact
-              </span>
+              {navLinks.map((link, i) => (
+                <a
+                  key={i}
+                  href={link.href}
+                  className="relative group hover:text-[#C6A777] transition"
+                >
+                  {link.name}
+                  <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#C6A777] group-hover:w-full transition-all"></span>
+                </a>
+              ))}
             </div>
           </div>
 
