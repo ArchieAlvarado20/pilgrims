@@ -1,6 +1,20 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Parisienne, Water_Brush } from "next/font/google";
 import "./globals.css";
+import Topbar from "./shared/topbar";
+import TopbarMobile from "./shared/mobileSideBar";
+
+const parisienne = Parisienne({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-parisienne",
+});
+
+const water = Water_Brush({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-parisienne",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +39,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={` ${parisienne.variable} ${water.variable} h-full antialiased bg-black`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {" "}
+        {/* <Topbar /> */}
+        <TopbarMobile />
+        {children}
+      </body>
     </html>
   );
 }
