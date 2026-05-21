@@ -30,7 +30,7 @@ export default function TopbarMobile() {
             </div>
 
             <div>
-              <h1 className="text-2xl font-bold text-white leading-none">
+              <h1 className="text-2xl font-bold text-white leading-none parisienne-regular">
                 Pilgrims Evangelical
               </h1>
               <p className="text-xs tracking-[3px] text-gray-300 uppercase mt-1">
