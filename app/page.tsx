@@ -9,8 +9,6 @@ import EldersCards from "./features/members/elders";
 import ChurchLeadership from "./features/members/member";
 import TopLeaders from "./features/members/topLeaders";
 import Footer from "./shared/footer";
-import GradientText from "./shared/gradient";
-import Topbar from "./shared/topbar";
 
 export default function Home() {
   return (
