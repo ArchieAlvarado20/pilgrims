@@ -21,7 +21,7 @@ export default function HeroSection() {
 
   return (
     <section
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black mt-10"
       id="#"
     >
       {/* BACKGROUND CAROUSEL */}

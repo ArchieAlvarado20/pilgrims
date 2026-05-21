@@ -1,26 +1,4 @@
-"use client";
-import { useEffect, useState } from "react";
-
 export default function DevotionalSection() {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-        }
-      },
-      { threshold: 0.5 },
-    );
-
-    const section = document.getElementById("devotion");
-    if (section) observer.observe(section);
-
-    return () => {
-      if (section) observer.unobserve(section);
-    };
-  }, []);
   const devotionals = [
     {
       title: "Devotional",
@@ -47,12 +25,7 @@ export default function DevotionalSection() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* HEADING */}
-        <div
-          className={`
-            text-center mb-14 transition-all duration-1000
-            ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
-          `}
-        >
+        <div className="text-center mb-20">
           <p className="uppercase tracking-[5px] text-[#C6A777] text-sm mb-4">
             Spiritual Growth
           </p>
@@ -73,7 +46,7 @@ export default function DevotionalSection() {
           {devotionals.map((devotional, index) => (
             <div
               key={index}
-              className={`
+              className="
                 group
                 bg-white/5
                 border border-white/10
@@ -84,9 +57,7 @@ export default function DevotionalSection() {
                 hover:border-amber-400/40
                 transition-all duration-500
                 shadow-2xl
-              ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}
-              `}
-              style={{ transitionDelay: `${index * 200}ms` }}
+              "
             >
               {/* IMAGE */}
               <div className="relative overflow-hidden h-72">
