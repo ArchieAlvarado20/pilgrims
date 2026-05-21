@@ -19,7 +19,7 @@ export default function TopbarMobile() {
   return (
     <>
       <header className="w-full fixed top-0 z-50 bg-black/40 backdrop-blur-md border-b border-white/10">
-        <div className="max-w-full mx-auto px-10 h-20 flex items-center justify-between">
+        <div className="max-w-full mx-auto px-5 h-20 flex items-center justify-between">
           {/* LOGO */}
           <div className="flex items-center gap-3 cursor-pointer">
             <div className="h-12 w-12 rounded-full overflow-hidden border border-white/20 shadow-lg">
