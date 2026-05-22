@@ -54,23 +54,8 @@ export default function TopbarMobile() {
           </nav>
 
           {/* CTA */}
-          {/* <button className="hidden lg:block px-6 py-3 rounded-full bg-[#C6A777] text-black font-bold hover:scale-105 transition">
-            Get Connected
-          </button> */}
           <a href="#email">
-            <button
-              className="
-              px-6 py-3
-              rounded-full
-              bg-gradient-to-r from-[#C6A777] to-[#C6A888]
-              text-black
-              font-bold
-              shadow-lg
-              hover:scale-105
-              hover:shadow-amber-500/40
-              transition-all duration-300
-            "
-            >
+            <button className="hidden lg:block px-6 py-3 rounded-full bg-[#C6A777] text-black font-bold hover:scale-105 transition">
               Get Connected
             </button>
           </a>
