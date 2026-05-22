@@ -133,7 +133,6 @@ export default function DevotionalSection() {
           {devotionals.map((devotional, index) => (
             <motion.div
               key={index}
-              variants={item}
               whileHover={{
                 y: -15,
                 rotateX: -2,
