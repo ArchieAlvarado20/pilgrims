@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Parisienne, Water_Brush } from "next/font/google";
 import "./globals.css";
 import Topbar from "./shared/topbar";
 import TopbarMobile from "./shared/mobileSideBar";
+import Footer from "./shared/footer";
 
 const parisienne = Parisienne({
   subsets: ["latin"],
@@ -46,6 +47,7 @@ export default function RootLayout({
         {/* <Topbar /> */}
         <TopbarMobile />
         {children}
+        <Footer />
       </body>
     </html>
   );

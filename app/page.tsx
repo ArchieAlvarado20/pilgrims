@@ -1,6 +1,7 @@
 import About from "./features/about/about";
 import ChurchHistory from "./features/about/history";
 import ChurchHeader from "./features/contact/contact";
+import EmailUsSection from "./features/contact/emailUs";
 import DevotionalSection from "./features/devotional/devotional";
 import SermonSection from "./features/devotional/sermon";
 import StatementOfFaith from "./features/devotional/statementOfFaith";
@@ -20,10 +21,11 @@ export default function Home() {
       <TopLeaders />
       <ChurchLeadership />
       <EldersCards />
-      <ChurchHeader />
+
       <ChurchHistory />
       <StatementOfFaith />
-      <Footer />
+      <ChurchHeader />
+      <EmailUsSection />
     </>
   );
 }

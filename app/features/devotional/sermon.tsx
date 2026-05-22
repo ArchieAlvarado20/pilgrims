@@ -77,7 +77,7 @@ export default function SermonSection() {
 
                 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}
               `}
-              style={{ transitionDelay: `${i * 200}ms` }}
+              style={{ transitionDelay: `${i * 500}ms` }}
             >
               {/* VIDEO */}
               <div className="aspect-video">

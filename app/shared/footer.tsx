@@ -1,3 +1,12 @@
+import {
+  FaFacebookF,
+  FaGlobe,
+  FaInstagramSquare,
+  FaMailBulk,
+  FaYoutube,
+  FcInstagram,
+} from "react-icons/fa";
+
 export default function Footer() {
   const navLinks = [
     { name: "Home", href: "#" },
@@ -44,7 +53,7 @@ export default function Footer() {
                   className="relative group hover:text-[#C6A777] transition"
                 >
                   {link.name}
-                  <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#C6A777] group-hover:w-full transition-all"></span>
+                  <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#C6A777] group-hover:w-15 transition-all"></span>
                 </a>
               ))}
             </div>
@@ -63,14 +72,68 @@ export default function Footer() {
             <p className="text-[#C6A777] font-semibold">📞 0917 704 4395</p>
 
             <p className="text-gray-400 text-sm">Sunday Worship: 9:00 AM</p>
+            <div className="flex items-center gap-4">
+              <a
+                href="https://www.facebook.com/cvntwrshp"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-full bg-white/5 border border-white/10 text-white hover:bg-[#C6A777] hover:text-black transition"
+              >
+                <FaFacebookF size={18} />
+              </a>
+              {/* 
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-full bg-white/5 border border-white/10 text-white hover:bg-[#C6A777] hover:text-black transition"
+              >
+                <FaInstagramSquare size={18} />
+              </a>
+
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-full bg-white/5 border border-white/10 text-white hover:bg-[#C6A777] hover:text-black transition"
+              >
+                <FaYoutube size={18} />
+              </a>
+
+              <a
+                href="mailto:sample@email.com"
+                className="p-3 rounded-full bg-white/5 border border-white/10 text-white hover:bg-[#C6A777] hover:text-black transition"
+              >
+                <FaMailBulk size={18} />
+              </a>
+
+              <a
+                href="/"
+                className="p-3 rounded-full bg-white/5 border border-white/10 text-white hover:bg-[#C6A777] hover:text-black transition"
+              >
+                <FaGlobe size={18} />
+              </a> */}
+            </div>
           </div>
         </div>
       </div>
 
       {/* BOTTOM BAR */}
-      <div className="border-t border-white/10 py-8 text-center text-gray-500 text-sm">
-        © {new Date().getFullYear()} Pilgrims Evangelical Church. All rights
-        reserved.
+      <div className="flex flex-col py-10 border-t border-white/10">
+        <div className=" text-center text-gray-500 text-sm">
+          © {new Date().getFullYear()} Pilgrims Evangelical Church. All rights
+          reserved.
+        </div>
+        <span className="text-gray-400 text-sm tracking-wide w-full text-center">
+          Made with <span className="text-red-500 animate-pulse">♥</span> by{" "}
+          <a
+            href="https://archiealvarado.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="text-[#C6A777] font-semibold">Archie</span>
+          </a>
+        </span>
       </div>
     </footer>
   );

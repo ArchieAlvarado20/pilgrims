@@ -105,7 +105,7 @@ export default function Topbar() {
 
         {/* CTA */}
         <div className="hidden lg:block">
-          <a href="#contact">
+          <a href="#email">
             <button
               className="
               px-6 py-3

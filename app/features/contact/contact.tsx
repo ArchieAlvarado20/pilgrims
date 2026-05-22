@@ -30,7 +30,10 @@ export default function ChurchHeader() {
         </div>
 
         {/* BUTTONS */}
-        <div className="mt-10 flex flex-col md:flex-row gap-4 justify-center">
+        <div
+          className="mt-10 flex flex-col md:flex-row gap-4 justify-center"
+          id="email"
+        >
           <button className="px-8 py-3 rounded-full bg-[#C6A777] text-black font-semibold hover:scale-105 transition">
             Visit Us
           </button>

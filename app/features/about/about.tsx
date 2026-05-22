@@ -78,15 +78,14 @@ export default function About() {
               <div className="flex flex-wrap gap-5">
                 <button
                   className="
-              px-8 py-4
+              px-6 py-3
               rounded-full
-              bg-gradient-to-r
-              from-[#EADBC8]
-              to-[#C6A777]
+              bg-gradient-to-r from-[#C6A777] to-[#C6A888]
               text-black
-              font-semibold
+              font-bold
               shadow-lg
               hover:scale-105
+              hover:shadow-amber-500/40
               transition-all duration-300
             "
                 >
