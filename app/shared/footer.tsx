@@ -1,11 +1,4 @@
-import {
-  FaFacebookF,
-  FaGlobe,
-  FaInstagramSquare,
-  FaMailBulk,
-  FaYoutube,
-  FcInstagram,
-} from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
 
 export default function Footer() {
   const navLinks = [
