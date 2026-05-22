@@ -117,9 +117,12 @@ export default function TopbarMobile() {
           </div>
 
           {/* CTA */}
-          <button className="mt-10 w-full py-3 rounded-full bg-[#C6A777] text-black font-bold">
-            Get Connected
-          </button>
+          <a href="#email">
+            {" "}
+            <button className="mt-10 w-full py-3 rounded-full bg-[#C6A777] text-black font-bold">
+              Get Connected
+            </button>
+          </a>
         </div>
       </div>
     </>
